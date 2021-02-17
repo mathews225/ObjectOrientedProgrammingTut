@@ -19,7 +19,14 @@ namespace ObjectOrientedProgrammingTut {
 			var poly = new Quad[] { sqr1, rect1, quad1 };
 
 			foreach (var quad in poly) {
-				Console.WriteLine($"Type of {quad.Print()}.\n" );
+				Console.WriteLine($"Type is {quad.Print()}." );
+
+				// needed b/c there is no GetArea() method for Quad class
+				var rect = quad as Rect;
+				if (rect != null) {
+					Console.WriteLine($"The shape has an area of {rect.GetArea()}.\n");
+				}
+
 			}
 
 		}
