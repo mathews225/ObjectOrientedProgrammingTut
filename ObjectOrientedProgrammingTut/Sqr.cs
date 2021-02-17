@@ -6,7 +6,8 @@ namespace ObjectOrientedProgrammingTut {
 	class Sqr : Rect {
 
 
-		public string Print() {
+		public override string Print() {
+			// "override" is needed to trump base class.
 			return "Square";
 		}
 

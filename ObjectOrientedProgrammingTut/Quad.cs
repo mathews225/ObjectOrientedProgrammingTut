@@ -10,7 +10,8 @@ namespace ObjectOrientedProgrammingTut {
     public int Side3 { get; set; }
     public int Side4 { get; set; }
 
-    public string Print() {
+    public virtual string Print() {
+      // "virtual" is needed on the base class.
       return "Quadrilateral";
 
     }
